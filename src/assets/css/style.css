@@ -14,9 +14,46 @@
 }
 
 /* Custom variables */
+:root{
+  --primary: rgb(0, 0, 0);
+  --secondary: black;
+  --alternative: hsla(100, 13%, 28%, 0.7);
+  --bgHeaderFooter: #F080B7;
+  --awesome: darkolivegreen;
+  --bgCAbout: #56744o;
+  --mainBox-shadow: .2rem .2rem .1rem •2rem rgba (105, 96, 96, 0.75);
+  --card-box-shadow: •5vw .5vw 1vw rgba (85, 94, 99, 0.9);
+  --text-shadow: 3rem .3rem .4rem rgba (78, 107, 91, 0.5);
+  --mainBg: Ohsla(145, 83%, 20%, 0.39);
+  --bgImg: linear-gradient(to right, var (--awesome), var (--mainBg))
+}
+
+/* Navbar & Footer*/
+:is(.navbar, footer){
+  background-color: var(--bgHeaderFooter);
+}
+
+/* Navbar */
+:is(.nav-link) {
+  color: black;
+  text-align: center;
+}
+
+/* Navbar */
+a{
+  transition: all .5s;
+
+  &:hover {
+      transform: scale(1.2);
+      text-decoration: underline;
+  }
+}
 /* End of custom variables */
 
 /* Landing Page */
+/* End of landing page */
+
+/* About Page */
 /* End of about page */
 
 /* Resume page */
