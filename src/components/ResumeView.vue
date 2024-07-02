@@ -1,6 +1,6 @@
 <template>
   <section class="container" id="education-experience">
-    <h2 class="display-2">Education & Experience</h2>
+    <h1 class="display-2">Education & Experience</h1>
     <div class="education container-fluid">
       <ul class="timeline">
         <li v-for="(item, index) in resume" :key="index" :class="{ 'timeline-inverted': index % 2 !== 0 }">

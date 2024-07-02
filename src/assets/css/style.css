@@ -13,7 +13,7 @@
   --primary: rgb(0, 0, 0);
   --secondary: black;
   --alternative: hsla(100, 13%, 28%, 0.7);
-  --bgHeaderFooter: #F080B7;
+  --bgHeaderFooter: #a8dadc;
   --awesome: darkolivegreen;
   --bgCAbout: #56744o;
   --mainBox-shadow: .2rem .2rem .1rem •2rem rgba (105, 96, 96, 0.75);
@@ -71,7 +71,7 @@ a{
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #F080B7;
+  background-color: #a8dadc;
 }
 
 .leftSide {
@@ -134,7 +134,7 @@ a{
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: #F080B7;
+  background-color: #a8dadc;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -167,12 +167,12 @@ a{
 .timeline>li>.timeline-panel {
   width: 46%;
   float: left;
-  border: 1px solid #F080B7;
+  border: 1px solid #a8dadc;
   border-radius: 2px;
   padding: 20px;
   position: relative;
   box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-  background-color: #F080B7;
+  background-color: #a8dadc;
 }
 
 .timeline>li>.timeline-panel:before {
@@ -181,8 +181,8 @@ a{
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-left: 15px solid #F080B7;
-  border-right: 0 solid #F080B7;
+  border-left: 15px solid #a8dadc;
+  border-right: 0 solid #a8dadc;
   border-bottom: 15px solid transparent;
   content: " ";
 }
@@ -193,14 +193,14 @@ a{
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #F080B7;
-  border-right: 0 solid #F080B7;
+  border-left: 14px solid #a8dadc;
+  border-right: 0 solid #a8dadc;
   border-bottom: 14px solid transparent;
   content: " ";
 }
 
 .timeline>li>.timeline-badge {
-  color: #F080B7;
+  color: #a8dadc;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -302,91 +302,100 @@ h4.timeline-title {
 /* End of resume page */
 
 /* Skills page */
-/* End of skills page */
-
-/* Testimonials page */
-.testimonial-container {
-  padding-top: 50px; /* Adjust as needed */
-}
-
-.testimonials {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.card-deck {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.card-text {
+  height: 72px;
 }
 
 .card {
-  width: 18rem; /* Adjust card width as needed */
-  margin-bottom: 20px; /* Adjust card margin as needed */
+  margin: 20px auto;
+  height: max-content;
+  border-radius: 15px;
+}
+
+.card:hover {
+  border: none;
+  box-shadow: 10px 5px 15px 0px #a8dadc;
 }
 
 .card-img-top {
-  max-width: 50%;
-  height: auto;
+  height: 160px;
+  display: flex;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 25px;
+}
+/* End of skills page */
+
+/* Testimonials page */
+/* Style for the testimonials section */
+.testimonial-container {
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+/* Style for the testimonials heading */
+.testimonials {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Style for each testimonial card */
+.card {
+  background-color: #f8f9fa; /* Light gray background */
+  border: none; /* Remove default card border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
+.card-img-top {
+  border-radius: 50%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
 .card-text {
-  font-size: 11px; /* Adjust font size as needed */
+  font-size: 1.1rem;
+  margin-top: 15px;
+  flex: 1;
 }
 
 .card-text span {
   font-weight: bold;
 }
+
+@media (min-width: 768px) {
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 0 0 calc(33.3333% - 20px); 
+    margin: 10px; 
+  }
+}
 /* End of testimonials page */
 
 /* Projects page */
-h1 {
-  color: black;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-
 .card {
-  background-color: #F080B7;
-  color: black;
-  border: 2px solid #F9D9E6;
-}
-
-.card-body {
-  padding: 1.25rem;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.card-text {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.btn-outline-primary {
-  color: #F080B7;
-  border-color: #F080B7;
-}
-
-.btn-outline-primary:hover {
-  background-color: #F080B7;
-  color: black;
-}
-
-.btn-group {
-  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
-  object-fit: cover;
-  height: 200px;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
 }
 /* End of projects page */
 

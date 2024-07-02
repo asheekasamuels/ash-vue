@@ -1,23 +1,28 @@
 <template>
-  <div class="container" id="projects">
+  <div class="container projects">
     <div class="row">
-      <h1>Projects</h1>
+      <div class="col">
+        <h1>Projects</h1>
+      </div>
     </div>
 
-    <div class="card-deck" v-if="projects">
-      <div v-for="project in projects" :key="project.id" class="card mb-3">
-        <img :src="project.image" class="card-img-top" :alt="`Image for ${project.title}`">
-        <div class="card-body">
-          <h5 class="card-title">{{ project.title }}</h5>
-          <p class="card-text">{{ project.description }}</p>
-          <p class="card-text">Technologies: {{ project.technologies.join(', ') }}</p>
-          <div class="btn-group" role="group" aria-label="Project Links">
-            <a :href="project.gitHub" class="btn btn-outline-primary" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-            <a :href="project.netlify" class="btn btn-outline-primary" target="_blank"><i class="bi bi-cursor-fill"></i> Hosted</a>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col mb-4" v-for="project in projects" :key="project.id">
+        <div class="card h-100">
+          <img :src="project.image" :alt="`Image for ${project.title}`" class="card-img-top" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <p class="card-text">Technologies: {{ project.technologies.join(', ') }}</p>
+            <div class="buttons">
+              <a :href="project.gitHub" class="pro-link" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+              <a :href="project.netlify" class="pro-link" target="_blank"><i class="bi bi-cursor-fill"></i> Hosted</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
