@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nanum Pen Script;
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Custom variables */
+/* End of custom variables */
+
+/* Landing Page */
+/* End of about page */
+
+/* Resume page */
+/* End of resume page */
+
+/* Skills page */
+/* End of skills page */
+
+/* Testimonials page */
+/* End of testimonials page */
+
+/* Contact page */
+/* End of contact page */
+
+/* Footer */
+/* End of footer */
