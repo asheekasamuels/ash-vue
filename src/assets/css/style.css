@@ -56,6 +56,68 @@ a{
 /* End of landing page */
 
 /* About Page */
+.about {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  color: black;
+}
+
+.infoBlocks {
+  border: 2px solid black;
+  max-width: 1700px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #F080B7;
+}
+
+.leftSide {
+  width: 68%;
+  border-right: 2px solid black;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.pic {
+  border-radius: 150px;
+  width: 250px;
+  margin: auto;
+}
+
+.text-col {
+  flex-basis: 65%;
+  padding: 20px;
+}
+
+.img-col {
+  flex-basis: 35%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .infoBlocks {
+    flex-direction: column;
+  }
+
+  .leftSide {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid black;
+  }
+
+  .img-col {
+    flex-basis: 100%;
+  }
+}
 /* End of about page */
 
 /* Resume page */
