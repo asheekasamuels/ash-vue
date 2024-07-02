@@ -8,11 +8,6 @@
     font-size: 20px; /* Adjust the size as needed */
 }
 
-/* Hide scrollbar */
-::-webkit-scrollbar{
-    display: none;
-}
-
 /* Custom variables */
 :root{
   --primary: rgb(0, 0, 0);
@@ -63,6 +58,42 @@ a{
 /* End of skills page */
 
 /* Testimonials page */
+.testimonial-container {
+  padding-top: 50px; /* Adjust as needed */
+}
+
+.testimonials {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 18rem; /* Adjust card width as needed */
+  margin-bottom: 20px; /* Adjust card margin as needed */
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.card-text span {
+  font-weight: bold;
+}
 /* End of testimonials page */
 
 /* Contact page */
