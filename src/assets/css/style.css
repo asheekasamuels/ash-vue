@@ -46,6 +46,13 @@ a{
 /* End of custom variables */
 
 /* Landing Page */
+.img-fluid {
+  width: 30rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 8px 0 rgba(249, 217, 230, 0.5);
+}
 /* End of landing page */
 
 /* About Page */
