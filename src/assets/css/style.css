@@ -299,7 +299,6 @@ h4.timeline-title {
     width: 90%;
   }
 }
-
 /* End of resume page */
 
 /* Skills page */
@@ -327,7 +326,7 @@ h4.timeline-title {
 }
 
 .card-img-top {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -336,13 +335,60 @@ h4.timeline-title {
 }
 
 .card-text {
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: 11px; /* Adjust font size as needed */
 }
 
 .card-text span {
   font-weight: bold;
 }
 /* End of testimonials page */
+
+/* Projects page */
+h1 {
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #F080B7;
+  color: black;
+  border: 2px solid #F9D9E6;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-outline-primary {
+  color: #F080B7;
+  border-color: #F080B7;
+}
+
+.btn-outline-primary:hover {
+  background-color: #F080B7;
+  color: black;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+/* End of projects page */
 
 /* Contact page */
 /* End of contact page */
