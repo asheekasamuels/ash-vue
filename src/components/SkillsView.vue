@@ -5,10 +5,10 @@
         <h1 class="skills2" id="skills2">Skills</h1>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
+    <div class="row">
+      <div class="col-lg-10 d-flex justify-content-center">
         <div class="row">
-          <div v-for="skill in skills" :key="skill.id" class="col-md-4 mb-4">
+          <div v-for="skill in skills" :key="skill.id" class="col-md-4 mb-4 d-flex justify-content-center">
             <div class="card h-100">
               <img :src="skill.image" class="card-img-top" alt="Skill Image">
               <div class="card-body">
@@ -38,9 +38,12 @@ export default {
         { id: 7, image: "https://iili.io/JN1kwJf.png", title: "Time Management", type: "soft skill", experience: "Advanced", description: "Using time wisely to work as efficiently as possible." },
         { id: 8, image: "https://iili.io/JN1ksOQ.png", title: "Adaptibility", type: "soft skill", experience: "Advanced", description: "My ability to embrace change and adjust to it with ease." },
         { id: 9, image: "https://iili.io/JN1kHtS.png", title: "Communication", type: "soft skill", experience: "Advanced", description: "The ability to convey or share ideas and feelings effectively." },
-
       ]
     };
   }
 };
 </script>
+
+<style scoped>
+/* Add any scoped styles here */
+</style>
