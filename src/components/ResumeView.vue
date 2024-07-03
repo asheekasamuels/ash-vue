@@ -1,6 +1,8 @@
 <template>
-  <section class="container" id="education-experience">
-    <h1 class="display-2">Education & Experience</h1>
+  <section class="container resume" id="education-experience">
+    <div class="row">
+      <h1 class="edu" id="edu">Education & Experience</h1>
+    </div>
     <div class="education container-fluid">
       <ul class="timeline">
         <li v-for="(item, index) in resume" :key="index" :class="{ 'timeline-inverted': index % 2 !== 0 }">
@@ -35,7 +37,7 @@ export default {
         { id: 2, title: "Snr Associate Operations", company: "WNS Global Services", yearStarted: 2023, yearEnded: 2023, description: "Taking inbound calls and making outbound calls to customers within the USA. Creating endorsements for vehicles." },
         { id: 3, title: "Customer Advisor", company: "Sigma Connected", yearStarted: 2021, yearEnded: 2023, description: "Taking inbound calls and making outbound calls to customers within the UK. Listening to customer needs and providing solutions to customer queries. Liasing with team leader and junior operations manager." },
         { id: 4, title: "Sale Assistant", company: "Sportsmans Warehouse", yearStarted: 2019, yearEnded: 2021, description: "Assisting with queries and offering excellent customer service. Cleaning the store and maintaining outstanding store condition as well as visual merchandising standards" },
-        { id: 5, certificate: "Matric", institution: "Steenberg High School", year: 2018 }
+        { id: 5, title: "Student", certificate: "Matric", institution: "Steenberg High School", yearStarted: 2014, yearEnded: 2018 }
       ]
     };
   },

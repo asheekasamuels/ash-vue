@@ -1,11 +1,11 @@
 <template>
-  <div class="container p-3 about">
+  <div class="container about">
     <h1 id="heading">About Me</h1>
-    <div class="row shadow rounded-4 infoBlocks">
-      <div class="img-col leftSide">
+    <div class="row">
+      <div class="img col-md-6">
         <img src="https://asheekasamuels.github.io/All-Images/images/Asheeka3.jpg" alt="image" class="center pic">
       </div>
-      <div class="text-col rightSide" v-if="about">
+      <div class="text col-md-6" v-if="about">
         <p class="lead" v-for="(paragraph, index) in about" :key="index">{{ paragraph }}</p>
       </div>
     </div>
@@ -25,3 +25,4 @@ export default {
   }
 };
 </script>
+

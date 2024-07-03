@@ -4,8 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Nanum Pen Script;
-    font-size: 20px; /* Adjust the size as needed */
+    font-family: cursive;
+    font-size: 18px; 
+    justify-content: center;
 }
 
 /* Custom variables */
@@ -13,7 +14,7 @@
   --primary: rgb(0, 0, 0);
   --secondary: black;
   --alternative: hsla(100, 13%, 28%, 0.7);
-  --bgHeaderFooter: #a8dadc;
+  --bgHeaderFooter: olive;
   --awesome: darkolivegreen;
   --bgCAbout: #56744o;
   --mainBox-shadow: .2rem .2rem .1rem •2rem rgba (105, 96, 96, 0.75);
@@ -46,81 +47,148 @@ a{
 /* End of custom variables */
 
 /* Landing Page */
+.landing {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid olive;
+  border-radius: 10px;
+  margin: 20px;
+}
+
 .img-fluid {
-  width: 30rem;
-  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
   object-fit: cover;
   object-position: center;
-  box-shadow: 0 4px 8px 0 rgba(249, 217, 230, 0.5);
+  box-shadow: 0 0 8px 8px olive;
+}
+
+#details {
+  padding: 1rem;
+}
+
+.display-1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .img-fluid {
+    max-width: 100%; 
+    box-shadow: none; 
+  }
+
+  .display-1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem; 
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .landing {
+    padding: 5px; 
+    margin: 10px;
+  }
+
+  .display-1 {
+    font-size: 2rem; 
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 /* End of landing page */
 
 /* About Page */
 .about {
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid olive;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#heading {
   color: black;
+  text-align: center; 
+  margin-bottom: 20px; 
 }
 
-.infoBlocks {
-  border: 2px solid black;
-  max-width: 1700px;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #a8dadc;
+.img {
+  width: 50%;
+  float: right;
 }
 
-.leftSide {
-  width: 68%;
-  border-right: 2px solid black;
-}
-
-.rightSide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+.text {
+  width: 50%;
+  float: left;
 }
 
 .pic {
-  border-radius: 150px;
-  width: 250px;
-  margin: auto;
-}
-
-.text-col {
-  flex-basis: 65%;
-  padding: 20px;
-}
-
-.img-col {
-  flex-basis: 35%;
+  max-width: 100%;
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .infoBlocks {
-    flex-direction: column;
+@media only screen and (max-width: 700px) {
+  .img,
+  .text {
+    width: 100%; 
+    float: none; 
+    margin-bottom: 20px; 
   }
 
-  .leftSide {
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid black;
+  .img {
+    text-align: center; 
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .about {
+    padding: 15px; 
+    margin: 15px;
   }
 
-  .img-col {
-    flex-basis: 100%;
+  #heading {
+    font-size: 1.8rem; 
+  }
+
+  .img,
+  .text {
+    width: 100%; 
+    float: none; 
+    margin-bottom: 10px;
+  }
+
+  .pic {
+    max-width: 100%; 
   }
 }
 /* End of about page */
 
 /* Resume page */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.resume {
+  background-color: white; 
+  padding: 10px;
+  border: 2px solid olive; 
+  border-radius: 10px; 
+  margin: 20px;
+}
+
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -134,7 +202,7 @@ a{
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: #a8dadc;
+  background-color: olive; 
   left: 50%;
   margin-left: -1.5px;
 }
@@ -167,12 +235,12 @@ a{
 .timeline>li>.timeline-panel {
   width: 46%;
   float: left;
-  border: 1px solid #a8dadc;
+  border: 1px solid olive; 
   border-radius: 2px;
   padding: 20px;
   position: relative;
   box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-  background-color: #a8dadc;
+  background-color: olive; 
 }
 
 .timeline>li>.timeline-panel:before {
@@ -181,8 +249,8 @@ a{
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-left: 15px solid #a8dadc;
-  border-right: 0 solid #a8dadc;
+  border-left: 15px solid olive;
+  border-right: 0 solid olive;
   border-bottom: 15px solid transparent;
   content: " ";
 }
@@ -193,14 +261,14 @@ a{
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #a8dadc;
-  border-right: 0 solid #a8dadc;
+  border-left: 14px solid olive; 
+  border-right: 0 solid olive; 
   border-bottom: 14px solid transparent;
   content: " ";
 }
 
 .timeline>li>.timeline-badge {
-  color: #a8dadc;
+  color: olive;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -234,23 +302,23 @@ a{
 }
 
 .timeline-badge.primary {
-  background-color: black;
+  background-color: black; 
 }
 
 .timeline-badge.success {
-  background-color: black;
+  background-color: black; 
 }
 
 .timeline-badge.warning {
-  background-color: black;
+  background-color: black; 
 }
 
 .timeline-badge.danger {
-  background-color: black;
+  background-color: black; 
 }
 
 .timeline-badge.info {
-  background-color: black;
+  background-color: black; 
 }
 
 .timeline-title {
@@ -267,6 +335,24 @@ a{
 
 .timeline-body>p+p {
   margin-top: 5px;
+}
+
+@media only screen and (max-width: 590px) {
+  .education.container-fluid {
+    width: 89%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .timeline-panel {
+    padding: 10px;
+  }
+  .timeline-panel p {
+    font-size: 12px;
+  }
+  h4.timeline-title {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 590px) {
@@ -302,105 +388,366 @@ h4.timeline-title {
 /* End of resume page */
 
 /* Skills page */
-.card-text {
-  height: 72px;
-}
-
-.card {
-  margin: 20px auto;
-  height: max-content;
-  border-radius: 15px;
-}
-
-.card:hover {
-  border: none;
-  box-shadow: 10px 5px 15px 0px #a8dadc;
-}
-
-.card-img-top {
-  height: 160px;
-  display: flex;
-  margin: auto;
+.skills {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid olive;
+  border-radius: 10px;
+  margin: 20px;
 }
 
 h1 {
-  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .card {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .skills {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .card {
+    width: calc(100% - 20px); 
+  }
 }
 /* End of skills page */
 
 /* Testimonials page */
-/* Style for the testimonials section */
-.testimonial-container {
-  padding: 50px 0; /* Adjust padding as needed */
+.testimonial {
+  background-color: white; 
+  padding: 10px;
+  border: 2px solid olive; 
+  border-radius: 10px; 
+  margin: 20px;
 }
 
-/* Style for the testimonials heading */
 .testimonials {
   text-align: center;
-  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
-/* Style for each testimonial card */
-.card {
-  background-color: #f8f9fa; /* Light gray background */
-  border: none; /* Remove default card border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.card-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.card {
+  width: 18rem; 
+  margin-bottom: 20px; 
 }
 
 .card-img-top {
-  border-radius: 50%;
-  max-width: 150px;
-  margin: 0 auto;
-  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  text-align: center;
 }
 
 .card-text {
-  font-size: 1.1rem;
-  margin-top: 15px;
-  flex: 1;
+  font-size: 16px; 
 }
 
 .card-text span {
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
-  .card-deck {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+@media screen and (max-width: 700px) {
+  .testimonial {
+    padding: 15px;
+    margin: 15px;
   }
-  
+
   .card {
-    flex: 0 0 calc(33.3333% - 20px); 
-    margin: 10px; 
+    width: calc(50% - 20px); 
+  }
+}
+@media screen and (max-width: 300px) {
+  .testimonial {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .card {
+    width: calc(100% - 20px); 
   }
 }
 /* End of testimonials page */
 
 /* Projects page */
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.projects {
+  background-color: white; 
+  padding: 10px;
+  border: 2px solid olive;
+  border-radius: 10px; 
+  margin: 20px;
 }
 
-.card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+.card {
+  border: 2px solid black; 
+}
+
+.card-title {
+  color: black;
+}
+
+.card-text {
+  color: #333; 
+}
+
+.pro-link {
+  background-color: olive; 
+  color: white; 
+  border: 1px solid olive;
+}
+
+.pro-link:hover {
+  background-color: #a2c523; 
+  border-color: #a2c523; 
+}
+
+@media screen and (max-width: 700px) {
+  .projects {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .card {
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .projects {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .card {
+    border: 1px solid black;
+  }
 }
 /* End of projects page */
 
 /* Contact page */
+.contact {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid olive;
+  border-radius: 10px; 
+  margin: 20px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px; 
+  margin: 20px;
+}
+
+.heading-text {
+  color: olive;
+}
+
+.form-control {
+  border-color: olive;
+}
+
+.btn {
+  color: olive; 
+  border-color: olive;
+}
+
+.btn:hover {
+  background-color: olive; 
+  color: white; 
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(128, 128, 0, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+  .contact,
+  .contact-form {
+    padding: 15px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .contact,
+  .contact-form {
+    padding: 10px;
+    margin: 5px;
+  }
+}
 /* End of contact page */
 
-/* Footer */
+/* Footer */ 
+footer {
+  padding: 20px 0;
+  text-align: center; 
+  width: 100%;
+}
+
+.card1 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 90px 5px 5px 5px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 0.8em;
+  margin-left: 0.6em;
+  fill: white;
+}
+
+.card2 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 5px 90px 5px 5px;
+  transition: .2s ease-in-out;
+}
+
+.facebook {
+  margin-top: 0.8em;
+  margin-left: -.5em;
+  fill: white;
+}
+
+.card3 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 5px 5px 5px 90px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.4em;
+  margin-left: 0.8em;
+  fill: white;
+}
+
+.card4 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 5px 5px 90px 5px;
+  transition: .2s ease-in-out;
+}
+
+.linkedin {
+  margin-top: -.6em;
+  margin-left: -0.6em;
+  fill: white;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+
+}
+
+.card4:hover .discord {
+  fill: white;
+}
 /* End of footer */

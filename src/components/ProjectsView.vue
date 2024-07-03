@@ -16,7 +16,7 @@
             <p class="card-text">Technologies: {{ project.technologies.join(', ') }}</p>
             <div class="buttons">
               <a :href="project.gitHub" class="pro-link" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-              <a :href="project.netlify" class="pro-link" target="_blank"><i class="bi bi-cursor-fill"></i> Hosted</a>
+              <a :href="project.vercel" class="pro-link" target="_blank"><i class="bi bi-cursor-fill"></i> Hosted</a>
             </div>
           </div>
         </div>
@@ -36,37 +36,55 @@ export default {
           title: "JS Calculator",
           description: "Developed a calculator",
           technologies: ["HTML", "CSS", "JavaScript"],
-          gitHub: "https://github.com/your-account/js-calculator",
-          netlify: "https://your-netlify-url/js-calculator",
-          image: "https://path-to-your-image/js-calculator.jpg"
+          gitHub: "https://github.com/asheekasamuels/jsCalculator.git",
+          vercel: "https://js-calculator-iota-five.vercel.app/",
+          image: "https://asheekasamuels.github.io/All-Images/images/js cal.png"
         },
         {
           id: 2,
           title: "Bootstrap Portfolio",
           description: "Developed a portfolio displaying my information",
           technologies: ["HTML", "CSS", "Bootstrap"],
-          gitHub: "https://github.com/your-account/bootstrap-portfolio",
-          netlify: "https://your-netlify-url/bootstrap-portfolio",
-          image: "https://path-to-your-image/bootstrap-portfolio.jpg"
+          gitHub: "https://github.com/asheekasamuels/asheekasPortfolio.git",
+          vercel: "https://asheekas-portfolio.vercel.app/",
+          image: "https://asheekasamuels.github.io/All-Images/images/bootstrap.png"
         },
         {
           id: 3,
           title: "To Do List",
           description: "Developed a to do list",
           technologies: ["HTML", "CSS", "JavaScript"],
-          gitHub: "https://github.com/your-account/to-do-list",
-          netlify: "https://your-netlify-url/to-do-list",
-          image: "https://path-to-your-image/to-do-list.jpg"
+          gitHub: "https://github.com/asheekasamuels/toDoApp.git",
+          vercel: "https://to-do-app-gray-three.vercel.app/",
+          image: "https://asheekasamuels.github.io/All-Images/images/to do list.png"
         },
         {
           id: 4,
           title: "JS Ecommerce Website",
           description: "Developed a store website with functionality",
           technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-          gitHub: "https://github.com/your-account/ecommerce-website",
-          netlify: "https://your-netlify-url/ecommerce-website",
-          image: "https://path-to-your-image/ecommerce-website.jpg"
-        }
+          gitHub: "https://github.com/asheekasamuels/Candytopia.git",
+          vercel: "https://candytopia-g5l9.vercel.app/",
+          image: "https://asheekasamuels.github.io/All-Images/images/js pro.png"
+        },
+        {
+         id: 5,
+         title: "BMI Calculator",
+         description: "Developed a bmi calculator",
+         technologies: ["HTML", "CSS", "JavaScript"],
+         gitHub: "https://github.com/asheekasamuels/BMI-calculator.git",
+         vercel: "https://bmi-calculator-lilac-theta.vercel.app/",
+         image: "https://asheekasamuels.github.io/All-Images/images/bmi.png"
+        },
+        {
+         id: 6,
+         title: " Temp Converter",
+         description: "Developed a temp converter",
+         technologies: ["HTML", "CSS", "JavaScript"],
+         gitHub: "https://github.com/asheekasamuels/tempConvertor.git",
+         vercel: "https://temp-convertor-alpha.vercel.app/",
+         image: "https://asheekasamuels.github.io/All-Images/images/temp.png"
+        },
       ];
     }
   }

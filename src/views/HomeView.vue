@@ -1,31 +1,31 @@
 <template>
   <div class="container">
     <section class="row" id= "landing">
-      <landingView/>
+      <LandingView/>
 
     </section>
     <section class="row" id= "about">
-      <aboutView/>
+      <AboutView/>
 
     </section>
     <section class="row" id= "resume">
-      <resumeView/>
+      <ResumeView/>
 
     </section>
     <section class="row" id= "skills">
-      <skillsView/>
+      <SkillsView/>
 
     </section>
     <section class="row" id= "projects">
-      <projectsView/>
+      <ProjectsView/>
 
     </section>
     <section class="row" id= "testimonials">
-      <testimonialsView/>
+      <TestimonialsView/>
 
     </section>
     <section class="row" id= "contact">
-      <contactView/>
+      <ContactView/>
 
     </section>
 
@@ -34,8 +34,18 @@
 </template>
 
 <script>
+import LandingView from '@/components/LandingView.vue'
+import AboutView from '@/components/AboutView.vue'
+import ResumeView from '@/components/ResumeView.vue'
+import SkillsView from '@/components/SkillsView.vue'
+import ProjectsView from '@/components/ProjectsView.vue'
+import TestimonialsView from '@/components/TestimonialsView.vue'
+import ContactView from '@/components/ContactView.vue'
 export default {
-
+  name: 'HomeView',
+  components: {
+    LandingView, AboutView, ResumeView, SkillsView, ProjectsView, TestimonialsView, ContactView
+  }
 }
 </script>
 
