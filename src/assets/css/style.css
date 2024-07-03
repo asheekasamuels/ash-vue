@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
-    font-size: 18px; 
     justify-content: center;
 }
 
@@ -14,7 +13,7 @@
   --primary: rgb(0, 0, 0);
   --secondary: black;
   --alternative: hsla(100, 13%, 28%, 0.7);
-  --bgHeaderFooter: olive;
+  --bgHeaderFooter: 	#C3B1E1;
   --awesome: darkolivegreen;
   --bgCAbout: #56744o;
   --mainBox-shadow: .2rem .2rem .1rem •2rem rgba (105, 96, 96, 0.75);
@@ -44,13 +43,14 @@ a{
       text-decoration: underline;
   }
 }
+
 /* End of custom variables */
 
 /* Landing Page */
 .landing {
   background-color: white;
   padding: 10px;
-  border: 2px solid olive;
+  border: 2px solid #C3B1E1;
   border-radius: 10px;
   margin: 20px;
 }
@@ -61,7 +61,8 @@ a{
   height: auto;
   object-fit: cover;
   object-position: center;
-  box-shadow: 0 0 8px 8px olive;
+  box-shadow: 0 0 4px 8px #C3B1E1;
+  border-radius: 50%; /* This creates an oval shape */
 }
 
 #details {
@@ -113,7 +114,7 @@ p {
 .about {
   background-color: white;
   padding: 20px;
-  border: 2px solid olive;
+  border: 2px solid 	#C3B1E1;
   border-radius: 10px;
   margin: 20px;
 }
@@ -184,7 +185,7 @@ h1 {
 .resume {
   background-color: white; 
   padding: 10px;
-  border: 2px solid olive; 
+  border: 2px solid 	#C3B1E1; 
   border-radius: 10px; 
   margin: 20px;
 }
@@ -202,7 +203,7 @@ h1 {
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: olive; 
+  background-color: 	#C3B1E1; 
   left: 50%;
   margin-left: -1.5px;
 }
@@ -235,12 +236,12 @@ h1 {
 .timeline>li>.timeline-panel {
   width: 46%;
   float: left;
-  border: 1px solid olive; 
+  border: 1px solid 	#C3B1E1; 
   border-radius: 2px;
   padding: 20px;
   position: relative;
   box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-  background-color: olive; 
+  background-color: 	#C3B1E1; 
 }
 
 .timeline>li>.timeline-panel:before {
@@ -249,8 +250,8 @@ h1 {
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-left: 15px solid olive;
-  border-right: 0 solid olive;
+  border-left: 15px solid 	#C3B1E1;
+  border-right: 0 solid 	#C3B1E1;
   border-bottom: 15px solid transparent;
   content: " ";
 }
@@ -261,14 +262,14 @@ h1 {
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid olive; 
-  border-right: 0 solid olive; 
+  border-left: 14px solid 	#C3B1E1; 
+  border-right: 0 solid 	#C3B1E1; 
   border-bottom: 14px solid transparent;
   content: " ";
 }
 
 .timeline>li>.timeline-badge {
-  color: olive;
+  color: 	#C3B1E1;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -391,7 +392,7 @@ h4.timeline-title {
 .skills {
   background-color: white;
   padding: 10px;
-  border: 2px solid olive;
+  border: 2px solid 	#C3B1E1;
   border-radius: 10px;
   margin: 20px;
 }
@@ -469,7 +470,7 @@ h1 {
 .testimonial {
   background-color: white; 
   padding: 10px;
-  border: 2px solid olive; 
+  border: 2px solid 	#C3B1E1; 
   border-radius: 10px; 
   margin: 20px;
 }
@@ -533,7 +534,7 @@ h1 {
 .projects {
   background-color: white; 
   padding: 10px;
-  border: 2px solid olive;
+  border: 2px solid 	#C3B1E1;
   border-radius: 10px; 
   margin: 20px;
 }
@@ -551,14 +552,14 @@ h1 {
 }
 
 .pro-link {
-  background-color: olive; 
+  background-color: 	#C3B1E1; 
   color: white; 
-  border: 1px solid olive;
+  border: 1px solid 	#C3B1E1;
 }
 
 .pro-link:hover {
-  background-color: #a2c523; 
-  border-color: #a2c523; 
+  background-color: #C3B1E1; 
+  border-color: 	#C3B1E1; 
 }
 
 @media screen and (max-width: 700px) {
@@ -588,7 +589,7 @@ h1 {
 .contact {
   background-color: white;
   padding: 10px;
-  border: 2px solid olive;
+  border: 2px solid #C3B1E1;
   border-radius: 10px; 
   margin: 20px;
 }
@@ -602,20 +603,20 @@ h1 {
 }
 
 .heading-text {
-  color: olive;
+  color: #C3B1E1;
 }
 
 .form-control {
-  border-color: olive;
+  border-color: #C3B1E1;
 }
 
 .btn {
-  color: olive; 
-  border-color: olive;
+  color: #C3B1E1; 
+  border-color: #C3B1E1;
 }
 
 .btn:hover {
-  background-color: olive; 
+  background-color: #C3B1E1; 
   color: white; 
 }
 
@@ -751,3 +752,7 @@ footer {
   fill: white;
 }
 /* End of footer */
+
+section {
+  scroll-margin-block: 6rem;
+}

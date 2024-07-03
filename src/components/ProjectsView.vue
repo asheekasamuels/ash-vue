@@ -7,7 +7,7 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <div class="col mb-4" v-for="project in projects" :key="project.id">
+      <div class="col mb-4  d-flex justify-content-center" v-for="project in projects" :key="project.id">
         <div class="card h-100">
           <img :src="project.image" :alt="`Image for ${project.title}`" class="card-img-top" style="height: 200px; object-fit: cover;">
           <div class="card-body">
@@ -90,3 +90,4 @@ export default {
   }
 };
 </script>
+
