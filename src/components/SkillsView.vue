@@ -20,15 +20,28 @@
           </div>
         </div>
       </div>
+      <Spinner v-if="loading" />
     </div>
   </section>
 </template>
 
 <script>
+import Spinner from './Spinner.vue';
+
 export default {
+  components: {
+    Spinner
+  },
   data() {
     return {
-      skills: [
+      skills: [],
+      loading: true  
+    };
+  },
+  created() {
+    
+    setTimeout(() => {
+      this.skills = [
         { id: 1, image: "https://iili.io/J7mBwhl.png", title: "HTML 5", type: "technical skill", experience: "Advanced" },
         { id: 2, image: "https://iili.io/J7mBiQV.png", title: "CSS", type: "technical skill", experience: "Advanced" },
         { id: 3, image: "https://iili.io/J7mC9Tv.png", title: "Vue 3", type: "technical skill", experience: "Advanced" },
@@ -38,8 +51,9 @@ export default {
         { id: 7, image: "https://iili.io/JN1kwJf.png", title: "Time Management", type: "soft skill", experience: "Advanced", description: "Using time wisely to work as efficiently as possible." },
         { id: 8, image: "https://iili.io/JN1ksOQ.png", title: "Adaptibility", type: "soft skill", experience: "Advanced", description: "My ability to embrace change and adjust to it with ease." },
         { id: 9, image: "https://iili.io/JN1kHtS.png", title: "Communication", type: "soft skill", experience: "Advanced", description: "The ability to convey or share ideas and feelings effectively." },
-      ]
-    };
+      ];
+      this.loading = false; 
+    }, 2000); 
   }
 };
 </script>
@@ -47,3 +61,4 @@ export default {
 <style scoped>
 /* Add any scoped styles here */
 </style>
+

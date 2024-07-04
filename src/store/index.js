@@ -7,7 +7,7 @@ const portfolioURL = 'https://asheekasamuels.github.io/vueEomp/data/'
 
 export default createStore({
   state: {
-    jobTitle: null,
+    title: null,
     about: null,
     resume: null,
     skills: null,
@@ -17,8 +17,8 @@ export default createStore({
   },
   getters: {},
   mutations: {
-    setJobTitle(state, value) {
-      state.jobTitle = value
+    setTitle(state, value) {
+      state.title = value
     },
     setAbout(state, value) {
       state.about = value
@@ -40,14 +40,14 @@ export default createStore({
 
   actions: {
 
-    async fetchJobtitle(context) {
+    async fetchTitle(context) {
       try {
-        let {jobTitles} = await (await axios.get(portfolioURL)).data
-        context.commit("setJobTitle", jobTitles)
+        let {title} = await (await axios.get(portfolioURL)).data
+        context.commit("setTitle", title)
       } catch (e) {
         Swal.fire({
           title: "Error",
-          text: "Unable  to fetch job title",
+          text: "Unable  to fetch title",
           icon: "error",
           timer: 2000,
         })
@@ -62,7 +62,7 @@ export default createStore({
       } catch (e) {
         Swal.fire({
           title: "Error",
-          text: "Unable  to fetch job title",
+          text: "Unable  to fetch title",
           icon: "error",
           timer: 2000,
         })
@@ -77,7 +77,7 @@ export default createStore({
       } catch (e) {
         Swal.fire({
           title: "Error",
-          text: "Unable  to fetch job title",
+          text: "Unable  to fetch title",
           icon: "error",
           timer: 2000,
         })
@@ -92,7 +92,7 @@ export default createStore({
       } catch (e) {
         Swal.fire({
           title: "Error",
-          text: "Unable  to fetch job title",
+          text: "Unable  to fetch title",
           icon: "error",
           timer: 2000,
         })
@@ -107,7 +107,7 @@ export default createStore({
       } catch (e) {
         Swal.fire({
           title: "Error",
-          text: "Unable  to fetch job title",
+          text: "Unable  to fetch title",
           icon: "error",
           timer: 2000,
         })
@@ -122,7 +122,7 @@ export default createStore({
       } catch (e) {
         Swal.fire({
           title: "Error",
-          text: "Unable  to fetch job title",
+          text: "Unable  to fetch title",
           icon: "error",
           timer: 2000,
         })

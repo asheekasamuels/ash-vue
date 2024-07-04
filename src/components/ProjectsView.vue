@@ -22,15 +22,27 @@
         </div>
       </div>
     </div>
-
+    <Spinner v-if="loading" />
   </div>
 </template>
 
 <script>
+import Spinner from './Spinner.vue';
+
 export default {
-  computed: {
-    projects() {
-      return [
+  components: {
+    Spinner
+  },
+  data() {
+    return {
+      projects: [], 
+      loading: true 
+    };
+  },
+  created() {
+   
+    setTimeout(() => {
+      this.projects = [
         {
           id: 1,
           title: "JS Calculator",
@@ -68,26 +80,30 @@ export default {
           image: "https://asheekasamuels.github.io/All-Images/images/js pro.png"
         },
         {
-         id: 5,
-         title: "BMI Calculator",
-         description: "Developed a bmi calculator",
-         technologies: ["HTML", "CSS", "JavaScript"],
-         gitHub: "https://github.com/asheekasamuels/BMI-calculator.git",
-         vercel: "https://bmi-calculator-lilac-theta.vercel.app/",
-         image: "https://asheekasamuels.github.io/All-Images/images/bmi.png"
+          id: 5,
+          title: "BMI Calculator",
+          description: "Developed a bmi calculator",
+          technologies: ["HTML", "CSS", "JavaScript"],
+          gitHub: "https://github.com/asheekasamuels/BMI-calculator.git",
+          vercel: "https://bmi-calculator-lilac-theta.vercel.app/",
+          image: "https://asheekasamuels.github.io/All-Images/images/bmi.png"
         },
         {
-         id: 6,
-         title: " Temp Converter",
-         description: "Developed a temp converter",
-         technologies: ["HTML", "CSS", "JavaScript"],
-         gitHub: "https://github.com/asheekasamuels/tempConvertor.git",
-         vercel: "https://temp-convertor-alpha.vercel.app/",
-         image: "https://asheekasamuels.github.io/All-Images/images/temp.png"
+          id: 6,
+          title: " Temp Converter",
+          description: "Developed a temp converter",
+          technologies: ["HTML", "CSS", "JavaScript"],
+          gitHub: "https://github.com/asheekasamuels/tempConvertor.git",
+          vercel: "https://temp-convertor-alpha.vercel.app/",
+          image: "https://asheekasamuels.github.io/All-Images/images/temp.png"
         },
       ];
-    }
+      this.loading = false; 
+    }, 2000); 
   }
 };
 </script>
 
+<style scoped>
+/* Add any scoped styles here */
+</style>

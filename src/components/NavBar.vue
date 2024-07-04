@@ -28,6 +28,7 @@
     
     <style scoped>
     
+    
     img[alt="logo"] {
         width: 80px;
         height: 80px;
